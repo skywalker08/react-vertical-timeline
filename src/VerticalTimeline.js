@@ -7,10 +7,12 @@ const VerticalTimeline = ({
   className = '',
   layout = '2-columns',
   lineColor = '#FFF',
+  lineWidth = 2,
   children,
 }) => {
   if (typeof window === 'object') {
     document.documentElement.style.setProperty('--line-color', lineColor);
+    document.documentElement.style.setProperty('--line-width', `${lineWidth}px`);
   }
   return (
     <div
@@ -41,6 +43,7 @@ VerticalTimeline.propTypes = {
     '1-column-right',
   ]),
   lineColor: PropTypes.string,
+  lineWidth: PropTypes.number,
 };
 
 export default VerticalTimeline;

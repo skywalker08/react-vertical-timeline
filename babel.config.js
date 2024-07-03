@@ -1,7 +1,10 @@
-module.exports = {
-  presets: [
-    ['@babel/preset-env', { loose: true, targets: { node: 10 } }],
-    '@babel/preset-react',
-  ],
-  plugins: ['@babel/plugin-syntax-dynamic-import'],
-};
+module.exports = 
+{
+    "presets": [
+        ["@babel/preset-env", {
+            "targets": { 
+                "browsers": ["last 2 versions", "ie >= 11"] // Example browser targets
+            }
+        }]
+    ]
+}
