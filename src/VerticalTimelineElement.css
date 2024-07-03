@@ -172,8 +172,6 @@
   color: #303e49;
 }
 .vertical-timeline-element-content p, .vertical-timeline-element-content .vertical-timeline-element-date {
-  font-size: 13px;
-  font-size: 0.8125rem;
   font-weight: 500;
 }
 .vertical-timeline-element-content .vertical-timeline-element-date {
@@ -194,7 +192,6 @@
 
 .vertical-timeline-element-content .vertical-timeline-element-date {
   float: left;
-  padding: .8em 0;
   opacity: .7;
 }
 .vertical-timeline-element-content-arrow {
@@ -244,7 +241,7 @@
     font-size: 16px;
     font-size: 1rem;
   }
-  .vertical-timeline-element-content .vertical-timeline-element-date {
+  .vertical-timeline-element-content {
     font-size: 14px;
     font-size: 0.875rem;
   }
@@ -266,8 +263,6 @@
     width: 100%;
     left: 124%;
     top: 6px;
-    font-size: 16px;
-    font-size: 1rem;
   }
 
   .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content,

@@ -17,16 +17,33 @@
 }
 
 .vertical-timeline::before {
-  /* this is the vertical line */
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 18px;
-  height: 100%;
-  width: var(--line-width, 4px);
-  background: var(--line-color);
-
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: var(--line-width, 4px);
+    background: var(--line-color);
+  }
+.vertical-timeline.vertical-timeline--one-column-right::before{
+    right:18px;
+    left:unset
 }
+@media only screen and (min-width:1170px){
+    .vertical-timeline.vertical-timeline--two-columns{
+        width:90%
+    }
+    .vertical-timeline.vertical-timeline--two-columns:before {
+        left: 50%;
+        margin-left: calc(-1 * (var(--line-width, 4px) / 2)); /* Adjust based on lineWidth */
+      }
+}
+
+@media only screen and (max-width: 1169px) {
+    .vertical-timeline::before {
+        left: 20px;
+        margin-left: calc(-1 * (var(--line-width, 4px) / 2)); /* Adjust based on lineWidth */
+    }
+  }
 
 .vertical-timeline.vertical-timeline--one-column-right::before {
   right: 18px;
