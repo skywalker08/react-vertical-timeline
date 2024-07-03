@@ -54,9 +54,10 @@
     "url": "https://github.com/stephane-monnot/react-vertical-timeline.git"
   },
   "files": [
-  "dist-modules/**/*", 
-  "style.min.css" 
-],
+    "dist-modules/**/*",
+    "lib/**/*",
+    "style.min.css"
+  ],
   "homepage": "https://stephane-monnot.github.io/react-vertical-timeline/",
   "bugs": {
     "url": "https://github.com/stephane-monnot/react-vertical-timeline/issues"
