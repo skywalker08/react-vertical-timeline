@@ -53,30 +53,13 @@
     "type": "git",
     "url": "https://github.com/stephane-monnot/react-vertical-timeline.git"
   },
+  "files": [
+  "dist-modules/**/*", 
+  "style.min.css" 
+],
   "homepage": "https://stephane-monnot.github.io/react-vertical-timeline/",
   "bugs": {
     "url": "https://github.com/stephane-monnot/react-vertical-timeline/issues"
-  },
-  "jest": {
-    "collectCoverage": true,
-    "setupFiles": [
-      "<rootDir>/__tests__/shim.js"
-    ],
-    "moduleFileExtensions": [
-      "js",
-      "jsx",
-      "json"
-    ],
-    "modulePathIgnorePatterns": [
-      "<rootDir>/__tests__/shim.js"
-    ],
-    "moduleNameMapper": {
-      "\\.(css)$": "<rootDir>/node_modules/jest-css-modules"
-    },
-    "moduleDirectories": [
-      "node_modules",
-      "packages"
-    ]
   },
   "keywords": [
     "react",
@@ -84,10 +67,6 @@
     "React Vertical Timeline"
   ],
   "license": "MIT",
-  "pre-push": [
-    "test",
-    "test:lint"
-  ],
   "dependencies": {
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2",
