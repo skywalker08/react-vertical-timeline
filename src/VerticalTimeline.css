@@ -44,18 +44,3 @@
         margin-left: calc(-1 * (var(--line-width, 4px) / 2)); /* Adjust based on lineWidth */
     }
   }
-
-.vertical-timeline.vertical-timeline--one-column-right::before {
-  right: 18px;
-  left: unset;
-}
-
-@media only screen and (min-width: 1170px) {
-  .vertical-timeline.vertical-timeline--two-columns {
-    width: 90%;
-  }
-  .vertical-timeline.vertical-timeline--two-columns:before {
-    left: 50%;
-    margin-left: -2px;
-  }
-}
